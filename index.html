@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>RecoMatch Privacy Policy</title>
+  <style>
+    :root { --bg: #fff; --label: #1d1d1f; --secondary: #6e6e73; --sep: #e5e5ea; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #000; --label: #f5f5f7; --secondary: #a1a1a6; --sep: #2c2c2e; } }
+    body { margin: 0; background: var(--bg); color: var(--label); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 30px; letter-spacing: -0.02em; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin: 32px 0 6px; }
+    p, li { color: var(--label); }
+    .muted { color: var(--secondary); }
+    hr { border: 0; border-top: 0.5px solid var(--sep); margin: 32px 0; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>RecoMatch Privacy Policy</h1>
+    <p class="muted">Effective October 23, 2026 · Last updated October 23, 2026</p>
+
+    <p>RecoMatch compares a bank or credit card statement with the QuickBooks Online reconcile screen and lists the transactions QuickBooks is missing. It works entirely inside your browser.</p>
+
+    <h2>What RecoMatch reads</h2>
+    <ul>
+      <li>The statement file you choose (PDF, CSV, OFX or QFX). It is read in your browser and never uploaded.</li>
+      <li>The QuickBooks Online reconcile screen in the tab where you open RecoMatch: the account name, the summary balances and the transaction list. It is read when you open the panel or choose a statement, and while the panel is open its summary balances (statement ending balance, cleared balance, Difference) are re-read every few seconds so the panel shows them live. Nothing is read while the panel is closed.</li>
+    </ul>
+
+    <h2>What RecoMatch stores</h2>
+    <p>The parsed statement, the reconcile list it read, the results and your settings are kept in your browser's extension storage (<code>chrome.storage.local</code>) so the panel can show them again when you reopen it. The "Clear" button deletes the statement and results. Removing the extension deletes everything.</p>
+
+    <h2>What RecoMatch sends</h2>
+    <p>Nothing. RecoMatch makes no network requests. There is no server, no account, no analytics and no tracking. All of its code, including the PDF reader, is bundled inside the extension. No remote code is loaded. No data is sold or shared with anyone.</p>
+
+    <h2>What RecoMatch changes</h2>
+    <p>Nothing in QuickBooks. It never ticks checkboxes, creates or edits transactions, or clicks Finish or Save. To read every row it may switch the list to the All tab, step through its pages and scroll it, and then puts the tab, page and scroll position back. The CSV file it exports is saved only when you click Export.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><b>activeTab, scripting:</b> to show the panel and read the reconcile screen in the tab you are using.</li>
+      <li><b>storage:</b> to keep your results and settings on your computer.</li>
+      <li><b>Access to qbo.intuit.com:</b> the only site RecoMatch runs on.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: open an issue at <a href="https://github.com/Reck-oner/RecoMatch-Extension/issues">github.com/Reck-oner/RecoMatch-Extension/issues</a>.</p>
+
+    <hr>
+    <h2>Chrome Web Store User Data Policy</h2>
+    <p>The use of information received from Google APIs and browser extension APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/policies">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. RecoMatch does not sell user data, does not use or transfer it for purposes unrelated to its single purpose, does not use it to determine creditworthiness or for lending, and does not use it to train AI or machine-learning models.</p>
+
+    <p class="muted">RecoMatch is an independent tool and is not affiliated with or endorsed by Intuit Inc.</p>
+
+    <p class="muted">RecoMatch is an independent product. It works with QuickBooks Online and is not affiliated with, endorsed by or sponsored by Intuit Inc. QuickBooks® and QuickBooks Online® are registered trademarks of Intuit Inc.</p>
+
+    <p class="muted">Copyright (c) 2026 Muhammad Haseeb</p>
+  </main>
+</body>
+</html>
